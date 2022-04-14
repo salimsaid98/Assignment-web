@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td{
+            border: 5px solid black;
+            border-collapse: collapse;
+
+        }
+        td{
+            padding: 5px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4" style="text-align: center; padding: 15px;">Table Heading Cell Spanning 4 columns</td>
+         </tr> 
+         <tr>
+            <td>Normal cell</td>
+            <td colspan="2">Cell spanning 2 columns</td>
+            <td>Normal cell</td>
+         </tr>  
+         <tr>
+           <td rowspan="3"  style="background-color: gray;">cell spanning 3 <br> rows with gray <br> (US spalling) background</td> 
+           <td>Normal cell</td> 
+           <td>Normal cell</td> 
+           <td>Normal cell</td> 
+         </tr>
+           <tr>
+            <td>Normal cell</td>
+            <td colspan="2" rowspan="2">Cell spanning 2 rows and 2 <br> columns</td>  
+           </tr>
+           <tr>
+            <td>Normal cell</td> 
+           </tr>
+    </table>
+</body>
+</html>

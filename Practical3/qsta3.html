@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My text 1</h1>
+    <h1>My text 2</h1>
+    <h1>My text 3</h1>
+    <h1>My text 4</h1>
+</body>
+<script>
+    var x =0;
+    var text = document.querySelector('h1');
+    contant();
+
+  function contant(){
+    for(i=0; i<text.length;i++){
+        text[i].style.display="none";
+    }
+x++;
+if(x>text.length){
+    x=1;
+}
+text[x-1].style.display="block";
+setTimeout(contant,1000);
+
+  }
+</script>
+</html>
